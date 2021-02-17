@@ -20,10 +20,13 @@
  */
 
 class Pegawai {
+    
+    //atribut variabel
     int id;
     String nama;
     String jenisKelamin;
 
+    //method setPegawai
     public void setPegawai (int id,String nama,String jenisKelamin)
     {
         this.id = id;
@@ -31,6 +34,7 @@ class Pegawai {
         this.jenisKelamin = jenisKelamin;
     }
     
+    //method tampil
     public void tampil()
     {
         System.out.println("No.ID Pegawai : "+id);
@@ -42,16 +46,21 @@ class Pegawai {
 public class ObyekPegawai {
 
     public static void main(String[] args) {
-      Pegawai pgw = new Pegawai();
+        
+      //objek pegawai1
+      Pegawai pegawai1 = new Pegawai();
+      pegawai1.setPegawai(001,"Budi","pria");
+      pegawai1.tampil();
       
-      pgw.setPegawai(001,"Budi","pria");
-      pgw.tampil();
+      //objek pegawai2
+      Pegawai pegawai2 = new Pegawai();
+      pegawai2.setPegawai(004,"Siti","wanita");
+      pegawai2.tampil();
       
-      pgw.setPegawai(004,"Siti","wanita");
-      pgw.tampil();
-      
-      pgw.setPegawai(007,"Rudy","pria");
-      pgw.tampil();
+      //objek pegawai3
+      Pegawai pegawai3 = new Pegawai();
+      pegawai3.setPegawai(007,"Rudy","pria");
+      pegawai3.tampil();
     }
     
 }

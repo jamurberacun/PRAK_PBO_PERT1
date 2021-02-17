@@ -10,10 +10,13 @@
  */
 
 class Buku {
+    
+    //atribut variabel
     String judul;
     int harga;
     int halaman;
 
+    //method setBuku
     public void setBuku (String judul, int harga, int halaman)
     {
         this.judul = judul;
@@ -21,6 +24,7 @@ class Buku {
         this.halaman = halaman;
     }
     
+    //method tampil
     public void tampil()
     {
         System.out.println("Judul Buku : "+judul);
@@ -32,16 +36,22 @@ class Buku {
 public class ObyekBuku {
 
     public static void main(String[] args) {
-      Buku bukul = new Buku();
+        
+     //objek buku1   
+      Buku buku1 = new Buku();
+      buku1.setBuku("PBO",75000,200);
+      buku1.tampil();
       
-      bukul.setBuku("PBO",75000,200);
-      bukul.tampil();
+      //objek buku2
+      Buku buku2 = new Buku();
+      buku2.setBuku("Prak_PBO",85000,350);
+      buku2.tampil();
       
-      bukul.setBuku("Prak_PBO",95000,230);
-      bukul.tampil();
+      //objek buku3
+      Buku buku3 = new Buku();
+      buku3.setBuku("Keamanan_Sistem",70000,250);
+      buku3.tampil();
       
-      bukul.setBuku("Keamanan_Sistem",80000,200);
-      bukul.tampil();
     }
     
 }

@@ -20,38 +20,47 @@
  */
 
 class Handphone {
+    
+    //atribut variabel
     String merk;
     int harga;
     String tipe;
 
-    public void setHandphone (String merk, int harga, String tipe)
+    //method setHandphone
+    public void setHandphone (String merk, String tipe, int harga)
     {
         this.merk = merk;
-        this.harga = harga;
         this.tipe = tipe;
+        this.harga = harga;
     }
     
+    //method tampil
     public void tampil()
     {
         System.out.println("Merk Handphone : "+merk);
-        System.out.println("Harga Handphone : "+harga);
-        System.out.println("Tipe Handphone : "+tipe);
+        System.out.println("Harga Handphone : "+tipe);
+        System.out.println("Tipe Handphone : "+harga);
     }
 }
 
 public class ObyekHandphone {
 
     public static void main(String[] args) {
-      Handphone hp = new Handphone();
       
-      hp.setHandphone("Iphone",15000000,"IphoneXSMAX");
-      hp.tampil();
+      //objek hp1
+      Handphone hp1 = new Handphone();
+      hp1.setHandphone("Iphone","IphoneXSMAX",15000000);
+      hp1.tampil();
       
-      hp.setHandphone("Samsung",17000000,"GalaxyS12Ultra");
-      hp.tampil();
+      //objek hp2
+      Handphone hp2 = new Handphone();
+      hp2.setHandphone("Samsung","GalaxyS12Ultra",17000000);
+      hp2.tampil();
       
-      hp.setHandphone("Xiaomi",8000000,"Mi10TPro");
-      hp.tampil();
+      //objek hp3
+      Handphone hp3 = new Handphone();
+      hp3.setHandphone("Xiaomi","Mi10TPro",8000000);
+      hp3.tampil();
     }
     
 }
